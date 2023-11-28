@@ -1,0 +1,85 @@
+
+.drpOption {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    transition: 0.2s ease;
+}
+
+.drpOption span {
+
+    font-size: 15px;
+    color: var(--theme22);
+    float: right;
+    font-family: 'yekan_Medium';
+    transition: 0.2s ease;
+}
+
+.drpOption:hover {
+
+    background-color: var(--text_color6);
+    color: var(--theme2);
+}
+
+/* loading */
+
+.drpOption .loading-spinner {
+    display: none;
+}
+
+.drpOption.loading {
+    pointer-events: none;
+}
+.drpOption.loading span {
+    display: none;
+}
+.drpOption.loading .loading-spinner {
+    display: block;
+}
+
+
+/* green */
+.drpOption.green:hover {
+
+    background-color: #22c55e13;
+}
+.drpOption.green:hover span {
+
+    color: var(--green);
+}
+
+
+
+/* red */
+.drpOption.red:hover {
+
+    background-color: #e81c4c15;
+}
+.drpOption.red:hover span {
+    color: var(--red);
+}
+
+
+
+/* blue */
+.drpOption.blue:hover {
+
+    background-color: #4a6eff14;
+}
+.drpOption.blue:hover span {
+    color: var(--theme);
+}
+
+
+/* yellow */
+.drpOption.yellow:hover {
+    background-color: rgba(255, 153, 0, 0.075);
+}
+.drpOption.yellow:hover span {
+    color: var(--orange);
+}

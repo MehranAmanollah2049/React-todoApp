@@ -1,0 +1,109 @@
+.AlertBox {
+
+    width: auto;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    pointer-events: all;
+    opacity: 0;
+    transform: scale(0.40);
+    transition: 0.2s ease;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+}
+
+.AlertBox svg {
+
+    width: 20px;
+    height: 20px;
+    float: right;
+    fill: var(--theme2);
+}
+
+.AlertBox.success svg {
+
+    fill: var(--green);
+}
+
+.AlertBox.error svg {
+
+    fill: var(--red);
+}
+
+.AlertBox.show {
+    animation: showAlert 0.3s ease 1 forwards;
+}
+.AlertBox.hidden {
+    animation: removeAlert 0.3s ease 1 forwards;
+}
+
+
+@keyframes showAlert {
+    from {
+        margin-top: var(--height);
+        opacity: 0;
+        transform: scale(0.40);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        margin-top: 0 !important;
+    }
+}
+
+@keyframes removeAlert {
+    from {
+        opacity: 1;
+        transform: scale(1);
+        margin-top: 0 !important;
+    }
+    to {
+        margin-top: var(--height);
+        opacity: 0;
+        transform: scale(0.40);
+    }
+}
+
+.alert-text {
+
+    font-size: 15px;
+    float: right;
+    color: var(--theme2);
+    font-family: 'yekan_Medium';
+}
+
+.progressBar {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    animation: progressAlert var(--timer) linear 1 forwards;
+    background-color: var(--theme2);
+    border-radius: 50px;
+}
+
+.AlertBox.success .progressBar {
+    background-color: var(--green);
+}
+.AlertBox.error .progressBar {
+    background-color: var(--red);
+}
+
+@keyframes progressAlert {
+    from {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

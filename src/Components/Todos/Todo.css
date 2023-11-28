@@ -1,0 +1,169 @@
+
+.TodoBox {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    border: solid 1.5px var(--text_color6);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    z-index: 0;
+}
+.TodoBox:not(.editMode):hover {
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+    border-color: #fff;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.TodoBox.doneTodo:not(.editMode):hover {
+    box-shadow: none;
+    border-color: var(--green);
+    background-color: var(--green);
+    z-index: 2;
+}
+
+.TodoBox.editMode {
+    z-index: 3;
+}
+
+.TodoBox.doneTodo {
+    background-color: #22c55e16;
+}
+
+.right_todo {
+
+    width: calc(100% - 60px);
+    height: 100%;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.todo_options_btn {
+
+    width: auto;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.todo_options_btn svg {
+
+    width: 27px;
+    height: 27px;
+    float: right;
+    stroke: var(--theme2);
+    transform: translateY(-0.5px);
+}
+
+.TodoBox.doneTodo .todo_options_btn svg {
+    stroke: var(--green);
+}
+.TodoBox.doneTodo:not(.editMode):hover .todo_options_btn svg {
+    stroke: #fff;
+}
+
+.todoText {
+
+    font-size: 16px;
+    color: var(--theme22);
+    float: right;
+    font-family: 'yekan_Medium';
+    transition: 0.2s ease;
+}
+
+.TodoBox:hover .todoText {
+    color: var(--theme2);
+}
+
+.TodoBox.doneTodo .todoText {
+    color: var(--green);
+}
+.TodoBox.doneTodo:not(.editMode):hover .todoText {
+    color: #fff;
+}
+
+.starBtn {
+
+    width: auto;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.starBtn svg {
+
+    width: 23px;
+    height: 23px;
+    float: left;
+    fill: var(--text_color4);
+    transition: 0.2s ease;
+}
+
+.TodoBox.doneTodo:not(.editMode):hover .starBtn:not(.pointed) svg {
+    fill: #fff;
+}
+
+.starBtn.active svg {
+    fill: var(--orange);
+}
+
+.starBtn.loading svg {
+    display: none;
+}
+.starBtn.loading .loading-spinner {
+    display: block;
+}
+
+.starBtn.pointed svg {
+    fill: var(--orange);
+}
+
+.editInput {
+
+    width: auto;
+    height: 45px;
+    float: right;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: solid 1.5px var(--text_color6);
+    padding: 0 1rem;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.editInput:focus {
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+    background-color: #fff;
+    border-color: #fff !important;
+}
+
+.TodoBox.doneTodo .editInput {
+    border-color: var(--green);
+}
+
+@media(max-width: 400px) {
+
+    .editInput {
+        width: calc(100% - 20px);
+    }
+}

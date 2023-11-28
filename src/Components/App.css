@@ -1,0 +1,397 @@
+
+.containerAll {
+
+    width: 500px;
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 13px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+}
+
+.topMenu {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+
+    width: auto;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--theme);
+    font-family: 'yekan_Fat';
+}
+
+.drpBtn {
+
+    width: auto;
+    height: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.drpBtn:hover {
+
+    background-color: #4a6eff15;
+}
+
+.drpBtn span {
+
+    color: var(--theme);
+    font-size: 17px;
+    font-family: 'yekan_Bold';
+    float: right;
+    user-select: none;
+}
+
+.drpBtn svg {
+
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.drpBtn svg  g {
+    fill: var(--theme);
+}
+
+.bottomMenu {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todoAllBtns {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 0.5rem;
+}
+
+.todoAllBtns.leftside {
+    justify-content: flex-end;
+}
+
+.addBtn {
+
+    width: auto;
+    height: 40px;
+    float: left;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1.5px transparent;
+    color: #fff;
+    font-family: 'yekan_Bold';
+    border-radius: 8px;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+    box-shadow: 0px 4px 44px 0px #4A6DFF66;
+}
+
+.addBtn:hover {
+
+    background-color: #fff;
+    color: var(--theme);
+    border-color: var(--theme);
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+}
+
+.deleteAll {
+
+    width: auto;
+    height: 40px;
+    float: left;
+    background-color: #e81c4c13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+.deleteAll span {
+    color: var(--red);
+    font-family: 'yekan_Bold';
+    font-size: 14px;
+    float: right;
+    transition: 0.2s ease;
+}
+
+
+.deleteAll:hover {
+
+    background-color: var(--red);
+}
+.deleteAll:hover span {
+    color: #fff;
+}
+.deleteAll .loading-spinner {
+    display: none;
+    border-right-color: #fff;
+}
+.deleteAll.loading .loading-spinner {
+    display: block;
+}
+.deleteAll.loading span {
+    display: none;
+}
+
+.AddTodoContainer {
+
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+.AddTodoContainer.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlayAddTodo {
+
+    position: absolute;
+    inset: 0;
+    background-color: #00000022;
+   
+}
+
+.containerForm {
+
+    width: 450px;
+    height: auto;
+    float: right;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.topForm {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_popup {
+
+    width: auto;
+    text-align: center;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-family: 'yekan_Fat';
+    color: var(--theme2);
+}
+
+.closeBtn {
+
+    width: auto;
+    height: auto;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.closeBtn svg {
+
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+.closeBtn svg  g {
+    stroke: var(--theme2);
+    transition: 0.2s ease;
+}
+
+.closeBtn:hover svg g {
+
+    stroke: var(--theme) ;
+}
+
+.textBox {
+
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    background-color: var(--text_color6);
+    padding: 1rem;
+    color: var(--theme2);
+    font-family: 'yekan_Medium';
+    border: solid 1.5px var(--text_color5);
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+    float: right;
+    transition: 0.2s ease;
+}
+
+.textBox:focus {
+    background-color: transparent;
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+}
+
+.addTodoBtn {
+
+    width: 100%;
+    height: 55px;
+    float: right;
+    background-color: var(--theme);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: solid 1.8px transparent;
+}
+
+.addTodoBtn span {
+    color: #fff;
+    font-family: 'yekan_Bold';
+    font-size: 17px;
+    float: right;
+}
+
+.addTodoBtn:hover {
+    background-color: #fff;
+    border-color: var(--theme);
+    box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0px 1.60568px 61.0158px rgba(0,0,0,.05);
+}
+.addTodoBtn:hover span {
+    color: var(--theme);
+}
+
+.addTodoBtn .loading-spinner {
+    display: none;
+    border-right-color: #fff;
+}
+
+.addTodoBtn.loading {
+    pointer-events: none;
+}
+.addTodoBtn.loading .loading-spinner {
+    display: block;
+}
+
+.addTodoBtn.loading span {
+    display: none;
+}
+
+
+.loadingAll {
+
+    width: 100%;
+    height: 150px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingAll .loading-spinner {
+    border-right-color: var(--theme2);
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+.emptyTodo {
+
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--theme22);
+    font-family: 'yekan_Fat';
+    font-size: 23px;
+}
+
+
+@media(max-width: 700px) {
+
+    .containerAll {
+        width: 95%;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .containerForm {
+        width: 95%;
+    }
+}
+
+@media(max-width: 400px) {
+    .todoAllBtns {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    
+    .todoAllBtns .deleteAll , .todoAllBtns .addBtn {
+        width: 100%;
+    }
+
+   
+}

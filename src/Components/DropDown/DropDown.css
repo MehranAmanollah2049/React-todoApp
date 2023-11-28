@@ -1,0 +1,47 @@
+
+.drpAll {
+
+    width: auto;
+    min-width: 150px;
+    height: auto;
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0px 1.60568px 61.0158px rgba(0, 0, 0, 0.105);
+    padding: 0.5rem 0;
+    z-index: 10;
+    top: calc(100% + 10px);
+    transform: scale(0.90);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.drpAll.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.drpAll.left {
+
+    left: 0;
+    transform-origin: top left;
+}
+
+.drpAll.right {
+
+    right: 0;
+    transform-origin: top right;
+}
+
+.overlay {
+
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+}
+.overlay.active {
+    display: block;
+}

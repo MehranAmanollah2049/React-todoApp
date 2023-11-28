@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'yekan_Regular';
+    src: url(/src/Tools/font/Yekan-Bakh-FaNum-04-Regular.woff);
+}
+
+@font-face {
+    font-family: 'yekan_Medium';
+    src: url(/src/Tools/font/Yekan-Bakh-FaNum-05-Medium.woff);
+}
+
+@font-face {
+    font-family: 'yekan_Bold';
+    src: url(/src/Tools/font/Yekan-Bakh-FaNum-06-Bold.woff);
+}
+
+@font-face {
+    font-family: 'yekan_Heavy';
+    src: url(/src/Tools/font/Yekan-Bakh-FaNum-07-Heavy.woff);
+}
+
+@font-face {
+    font-family: 'yekan_Fat';
+    src: url(/src/Tools/font/Yekan-Bakh-FaNum-08-Fat.woff);
+}
+
+
+
+:root {
+
+    --theme: #4a6dff;
+    --theme2: #2a2d53;
+    --theme22: #55637f;
+    --theme3: #f3f4f6;
+    --theme4: #bbbbbb;
+    --theme5: #aeb4b9;
+    --grey: #64748b;
+    --grey2: #a8b1bf;
+    --text_color1: #0f182e;
+    --text_color2: #334155;
+    --text_color3: #6c6e88;
+    --text_color4: #93a4b8;
+    --text_color5: #d9dcde;
+    --text_color6: #f0f0f6;
+    --text_color66: #f0f0f68b;
+    --text_color7: #d9dcde62;
+    --text_color8: #93a4b8ab;
+    --red: #e81c4d;
+    --green: #22c55e;
+    --green_opacity: #bceece;
+    --orange: #f90;
+    --width: 1260px;
+}
+
+
+body {
+
+
+    background-color: var(--theme3);
+    direction: rtl;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'yekan_Regular';
+}
+
+#root {
+
+    width: 100%;
+    height: auto;
+    float: right;
+    position: relative;
+    overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 5rem;
+}
+
+/* alerts */
+
+.Notification {
+    width: 100%;
+    height: auto;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 15px;
+    pointer-events: none;
+    position: fixed;
+    top: 10px;
+    z-index: 1500;
+}
+
+.loading-spinner {
+
+    height: 22px;
+    width: 22px;
+    color: rgba(90, 90, 90, 0.2);
+    position: relative;
+    border: 3px solid;
+    border-radius: 50%;
+    border-right-color: #5a5a5a;
+    animation: rotate 1s linear infinite;
+    display: none;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media(max-width: 700px) {
+
+    #root {
+        padding: 3rem 0;
+    }
+}
