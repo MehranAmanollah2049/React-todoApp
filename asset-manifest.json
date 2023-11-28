@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-todoApp/static/css/main.6ee819c6.css",
+    "main.js": "/React-todoApp/static/js/main.f9c9de2b.js",
+    "static/js/787.c0b411c1.chunk.js": "/React-todoApp/static/js/787.c0b411c1.chunk.js",
+    "static/media/Yekan-Bakh-FaNum-04-Regular.woff": "/React-todoApp/static/media/Yekan-Bakh-FaNum-04-Regular.74655fa26f28d8567a7d.woff",
+    "static/media/Yekan-Bakh-FaNum-05-Medium.woff": "/React-todoApp/static/media/Yekan-Bakh-FaNum-05-Medium.4be8304dcd7ae154a2d3.woff",
+    "static/media/Yekan-Bakh-FaNum-08-Fat.woff": "/React-todoApp/static/media/Yekan-Bakh-FaNum-08-Fat.4ad33b69928bc8f5ec07.woff",
+    "static/media/Yekan-Bakh-FaNum-07-Heavy.woff": "/React-todoApp/static/media/Yekan-Bakh-FaNum-07-Heavy.eb23f8ee4a4a18db8d7e.woff",
+    "static/media/Yekan-Bakh-FaNum-06-Bold.woff": "/React-todoApp/static/media/Yekan-Bakh-FaNum-06-Bold.6be8947dc2a9db02022a.woff",
+    "index.html": "/React-todoApp/index.html",
+    "main.6ee819c6.css.map": "/React-todoApp/static/css/main.6ee819c6.css.map",
+    "main.f9c9de2b.js.map": "/React-todoApp/static/js/main.f9c9de2b.js.map",
+    "787.c0b411c1.chunk.js.map": "/React-todoApp/static/js/787.c0b411c1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ee819c6.css",
+    "static/js/main.f9c9de2b.js"
+  ]
+}
